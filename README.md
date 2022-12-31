@@ -2,18 +2,12 @@
 
 ## 초기설정
 
-0. 저장소 clone
+0. 저장소 fork 후 clone
 ```shell
-$ git clone https://github.com/zionhann/22-4-pps.git
+$ git clone https://github.com/<username>/22-4-pps.git
 ```
 
-1. 자신의 이름으로 브랜치 생성후 체크아웃
-
-```shell
-$ git checkout -b <이름>
-```
-
-2. 브랜치 이름과 동일한 이름으로 폴더 생성후 폴더 안에 리뷰 받을 소스파일을 포함시킨다. 이때 실행파일은 제외한다.
+1. 자신의 이름으로 폴더 생성후 폴더 안에 리뷰 받을 소스파일을 포함시킨다. 이때 실행파일은 제외한다.
 
 ```shell
 $ mkdir <이름>
@@ -33,7 +27,7 @@ $ git commit -m "Week1"
 $ git push origin <브랜치 이름>
 ```
 
-1. 제목은 자신의 이름과 함께 해당 주차 기입, 내용에는 문제 번호를 포함하여 PR 생성 (main <- [자신의 브랜치])
+1. 제목은 자신의 이름과 함께 해당 주차 기입, 내용에는 문제 번호를 포함하여 PR 생성 (zionhann/22-4-pps[main] <- username/22-4-pps[main])
 
 ![pr-convention](https://user-images.githubusercontent.com/45687157/210139381-53e4d9ad-067a-4a9b-a3e5-befccee99153.png)
 
