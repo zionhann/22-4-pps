@@ -1,21 +1,22 @@
+#include <iostream>
 #include <string>
-
 using namespace std;
 
-string solution(string s, int n)
+int main(int argc, char *argv[])
 {
+	string s;
 
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] >= 'A' && s[i] <= 'Z')
-        {
-            s[i] + n > 'Z' ? s[i] += n - 'Z' + 'A' - 1 : s[i] += n;
-        }
+	cin >> s;
 
-        else if (s[i] >= 'a' && s[i] <= 'z')
-        {
-            s[i] + n > 'z' ? s[i] += n - 'z' + 'a' - 1 : s[i] += n;
-        }
-    }
-    return s;
+	for (int i = 0; i < s.length(); ++i)
+	{
+		s[i] = s[i] - 3;
+		if (s[i] < 65)
+		{
+			s[i] += 26;
+		}
+		cout << s[i];
+	}
+
+	return 0;
 }

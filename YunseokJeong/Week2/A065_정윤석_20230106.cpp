@@ -1,14 +1,15 @@
 #include <iostream>
-#include <utility>
 #include <algorithm>
 #include <vector>
+
 using namespace std;
+
 int main()
 {
     int num;
     cin >> num;
-    vector<pair<long, long>> arr;
-    pair<long, long> tmp;
+    vector<pair<int, int>> arr;
+    pair<int, int> tmp;
 
     for (int i = 0; i < num; i++)
     {
