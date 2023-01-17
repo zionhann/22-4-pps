@@ -7,9 +7,9 @@ using namespace std;
 int main()
 {
     int N, M;
-    string s;
+    string str;
     string nums[11] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-    vector<pair<string, int>> ans;
+    vector<pair<string, int>> v;
 
     ios_base::sync_with_stdio(0);
     cin.tie(0);
@@ -20,21 +20,21 @@ int main()
     {
         if (i >= 10)
         {
-            s = nums[i / 10] + " " + nums[i % 10];
-            ans.push_back({s, i});
+            str = nums[i / 10] + " " + nums[i % 10];
+            v.push_back({str, i});
         }
         else
         {
-            s = nums[i % 10];
-            ans.push_back({s, i});
+            str = nums[i % 10];
+            v.push_back({str, i});
         }
     }
 
-    sort(ans.begin(), ans.end());
+    sort(v.begin(), v.end());
 
-    for (int i = 0; i < ans.size(); i++)
+    for (int i = 0; i < v.size(); i++)
     {
-        cout << ans[i].second << " ";
+        cout << v[i].second << " ";
         if (i % 10 == 9)
             cout << '\n';
     }
